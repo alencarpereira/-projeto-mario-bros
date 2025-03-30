@@ -183,7 +183,7 @@ textarea {
     transition: visibility 1s ease-in-out; /* serve para fazer uma transição do formulario */
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
     p{
       display: none;
