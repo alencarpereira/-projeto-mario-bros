@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-mario {
+    height: 200px;
+}
+
+button {
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    /*para que las letras esten en mayusculas*/
+    font-weight: bold;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: #def323;
+    color: #000;
+    border-radius: 50%;
+    transition: 0.7s ease-in-out;
+    letter-spacing: 1px;
+}
+
+button:active {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.imagem-mario-luigi {
+    height: 500px;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-mae {
+    display: flex;
+    /* serve para colocar os elementos um do lado do outro */
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.caixa-principal {
+    width: 40%;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.mascara {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    z-index: 1
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    object-fit: cover;
+    /* serve para que a imagem fique com a mesma proporção da tela */
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.link-whatsapp {
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 30px;
+}
+
+.header img {
+    height: 60px;
+}
+
+.header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+    /* serve para fazer uma transição de cor */
+}
+
+.formulario-fale-conosco {
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    left: -300px;
+    /* para que o formulario fique fora da tela */
+    top: 30%;
+    /* para que o formulario fique no centro da tela */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form .botao-formulario {
+    display: block;
+    margin: 20px auto;
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    /*para que las letras esten en mayusculas*/
+    font-weight: bold;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form .botao-formulario:hover {
+    transform: translateY(-5px);
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80f;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80f;
+}
+
+
+.mascara-formulario {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+@media screen and (max-width: 768px) {
+    .mascara {
+        width: 100%;
+        height: 100%;
+    }
+    .mascara-formulario {
+        width: 100%;
+        height: 100%;
+    }
+}

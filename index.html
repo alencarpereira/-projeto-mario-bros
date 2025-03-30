@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Mario Bros</title>
 </head>
+
 <body>
-    
+    <div class="mascara-formulario"></div>
+
+    <div class="header"> 
+        <img src="./img/logo-header.png" alt="Logo Mario Bros" class="logo-mario">
+        <a href="#home">Home</a>
+        <a href="#nossos-serviços">Nossos Serviços</a>
+        <a href="#fale-conosco">Fale Conosco</a>
+    </div>
+
+
+    <div class="caixa-mae">
+        <div id="home" class="caixa-principal">
+            <img src="./img/logoMario.png" alt="Logo Mario Bros" class="logo-mario">
+
+            <p id="nossos-serviços"> Olá, me chamo Mário e, junto com meu sócio Luigi, somos especializados em serviços de hidráulica
+                completos.
+                Com
+                anos de experiência na área, oferecemos soluções rápidas e eficientes para problemas de encanamento,
+                como
+                consertos de vazamentos, instalação e manutenção de torneiras, reparos em pipes e sistemas de esgoto,
+                além
+                de
+                serviços de instalação de aquecedores e pressurizadores.</p>
+            <p>Nosso compromisso é com a qualidade, segurança e satisfação do cliente. Trabalhamos com as melhores
+                ferramentas e
+                materiais, sempre garantindo que o serviço seja feito de maneira profissional e sem dores de cabeça.</p>
+            <p>Se você precisa de um serviço hidráulico de confiança, entre em contato conosco! Estamos à disposição
+                para
+                atender suas necessidades, seja em residências ou empresas.</p>
+            <p>Mário & Luidi – Seu time de encanadores de confiança.</p>
+
+            <button id="fale-conosco">Entre em contato</button>
+        </div>
+
+        <div>
+            <img src="./img/mario.png" alt="Imagem Mario e luigi" class="imagem-mario-luigi">
+        </div>
+    </div>
+
+
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a  href="https://w.app/4hoi9c" target="_blank">
+        <img src="./img/whatsapp.png" alt="Logo Whatsapp" class="link-whatsapp">
+    </a>
+
+    <form class="formulario-fale-conosco">
+        <input placeholder="Seu nome">
+        <input placeholder="Seu Telefone">
+        <textarea placeholder="Digite seu problema aqui..."></textarea>
+        <button class="botao-formulario">Pedir Orçamento</button>
+    </form>
+
 </body>
+
+<script src="script.js"></script>
+
 </html>
