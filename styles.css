@@ -183,7 +183,7 @@ textarea {
     transition: visibility 1s ease-in-out; /* serve para fazer uma transição do formulario */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px)  {
 
     p{
       display: none;
@@ -232,3 +232,53 @@ textarea {
         height: 100%;
     }
 }
+
+@media screen and (orientation: landscape) {
+    /* Ajustes para parágrafos em orientação horizontal */
+    p {
+        font-size: 16px; /* Menor tamanho de fonte para se ajustar melhor na tela */
+        line-height: 1.6; /* Aumenta o espaçamento entre linhas para uma melhor leitura */
+        width: 60%; /* Limita a largura do parágrafo para evitar que fique muito largo */
+        margin: 10px auto; /* Centraliza o parágrafo na tela */
+    }
+
+    .caixa-mae {
+        flex-direction: row; /* Coloca os itens lado a lado */
+        justify-content: space-between;
+        padding: 30px; /* Ajusta o padding para um bom espaçamento */
+    }
+
+    .caixa-principal {
+        width: 50%; /* Ajusta a largura da caixa principal */
+        padding-right: 20px; /* Adiciona um padding para dar espaço ao texto e imagem */
+    }
+
+    .imagem-mario-luigi {
+        height: auto; /* Mantém a proporção da imagem */
+        width: 50vw; /* Ajusta a largura da imagem para não ficar muito grande */
+    }
+
+    .header a {
+        font-size: 20px; /* Ajusta o tamanho do texto no menu */
+    }
+
+    .link-whatsapp {
+        bottom: 20px; /* Ajusta a posição do ícone do WhatsApp */
+        right: 20px;
+    }
+
+    .formulario-fale-conosco {
+        width: 300px; /* Ajusta a largura do formulário */
+    }
+
+    .mascara-formulario {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
